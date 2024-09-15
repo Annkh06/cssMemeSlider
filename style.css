@@ -122,3 +122,49 @@ input[type="radio"] {
     cursor: pointer;
     transition: 0.5s;
 }
+
+
+#button-1:checked~.slider>.slide1 {
+    margin-left: 0;
+}
+
+#button-2:checked~.slider>.slide1 {
+    margin-left: -101%;
+}
+
+#button-3:checked~.slider>.slide1 {
+    margin-left: -202%;
+}
+
+#button-4:checked~.slider>.slide1 {
+    margin-left: -304%;
+}
+
+
+
+#button-1:checked~.container-text-button .text #h1 {
+
+    margin-left: 0;
+    transition-duration: .9s;
+}
+
+#button-2:checked~.container-text-button .text #h1 {
+
+    margin-left: -101%;
+
+    transition-duration: .9s;
+}
+
+#button-3:checked~.container-text-button .text #h1 {
+
+    margin-left: -202%;
+
+    transition-duration: .9s;
+}
+
+#button-4:checked~.container-text-button .text #h1 {
+
+    margin-left: -304%;
+
+    transition-duration: .9s;
+}
