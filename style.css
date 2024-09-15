@@ -168,3 +168,38 @@ input[type="radio"] {
 
     transition-duration: .9s;
 }
+
+
+@media screen and (max-width:768px) {
+    .container-text-button {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .h {
+        width: 60vw;
+    }
+
+    .text {
+        width: 70vw;
+        margin-left: 0.1rem;
+    }
+
+    #button-2:checked~.container-text-button .text #h1 {
+        margin-left: -85%;
+    }
+
+    #button-3:checked~.container-text-button .text #h1 {
+        margin-left: -170%;
+    }
+
+    #button-4:checked~.container-text-button .text #h1 {
+
+        margin-left: -257%;
+    }
+}
