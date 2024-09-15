@@ -45,3 +45,80 @@ body {
 img {
     max-width: 60vw;
 }
+input[type="radio"] {
+    display: none;
+}
+
+.container-text-button {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+}
+
+.text {
+    display: flex;
+    width: 50vw;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.h {
+    display: flex;
+    width: 40vw;
+    margin-top: 2vw;
+}
+
+#button-1:checked~.container-text-button>.nav>.nav-element:nth-child(1)>.button-coloring,
+#button-2:checked~.container-text-button>.nav>.nav-element:nth-child(2)>.button-coloring,
+#button-3:checked~.container-text-button>.nav>.nav-element:nth-child(3)>.button-coloring,
+#button-4:checked~.container-text-button>.nav>.nav-element:nth-child(4)>.button-coloring {
+    background: #93fff1;
+}
+
+.button-coloring {
+    display: flex;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 1.5vw;
+    border: 0.3vw solid rgb(14, 14, 14);
+    background-color: rgb(0, 0, 0);
+}
+
+.button-coloring:hover {
+    background-color: #fb7ed6;
+    ;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-element:hover .button-coloring {
+    background-color: #fb7ed6;
+    ;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-element:active .button-coloring {
+    background-color: #000000;
+    ;
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+
+
+.nav {
+    display: flex;
+    margin-top: 1vw;
+}
+
+.nav-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 6vw;
+    cursor: pointer;
+    transition: 0.5s;
+}
