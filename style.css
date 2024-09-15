@@ -217,3 +217,32 @@ font-size: 1rem;
 
     }
 }
+
+@media screen and (max-width:517px) {
+    .text {
+width:60vw;
+    }
+    .h{
+        width: 60vw;
+        height: 20vw;
+    }
+
+    #button-2:checked~.container-text-button .text #h1 {
+        margin-left: -100%;
+    }
+
+    #button-3:checked~.container-text-button .text #h1 {
+        margin-left: -200%;
+    }
+
+    #button-4:checked~.container-text-button .text #h1 {
+        margin-left: -300%;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .h {
+font-size: 0.8rem;
+
+    }
+}
