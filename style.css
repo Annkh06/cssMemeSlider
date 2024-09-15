@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background: #89ffef;
+    scroll-behavior: smooth;
+}
+
+.wrapp {
+    display: flex;
+    margin: 5vw auto 0;
+    flex-direction: column;
+    width: 70vw;
+    background: #fb7ed6;
+    height: 70vw;
+    border-radius: 7vw;
+    border: 0.3vw solid rgb(14, 14, 14);
+}
+
+.wrapper-slider {
+    display: flex;
+    margin: 5vw auto 0;
+    flex-direction: column;
+    overflow: hidden;
+    width: 60vw;
+    background: #fcfcfc;
+    border-radius: 3vw;
+    border: 0.3vw solid rgb(14, 14, 14);
+    height: 60vw;
+}
+
+.slider {
+    display: flex;
+}
+
+.slides {
+    display: flex;
+    transition: all .7s ease;
+}
+
+img {
+    max-width: 60vw;
+}
+input[type="radio"] {
+    display: none;
+}
+
+.container-text-button {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+}
+
+.text {
+    display: flex;
+    width: 50vw;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.h {
+    display: flex;
+    width: 40vw;
+    margin-top: 2vw;
+}
+
+#button-1:checked~.container-text-button>.nav>.nav-element:nth-child(1)>.button-coloring,
+#button-2:checked~.container-text-button>.nav>.nav-element:nth-child(2)>.button-coloring,
+#button-3:checked~.container-text-button>.nav>.nav-element:nth-child(3)>.button-coloring,
+#button-4:checked~.container-text-button>.nav>.nav-element:nth-child(4)>.button-coloring {
+    background: #93fff1;
+}
+
+.button-coloring {
+    display: flex;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 1.5vw;
+    border: 0.3vw solid rgb(14, 14, 14);
+    background-color: rgb(0, 0, 0);
+}
+
+.button-coloring:hover {
+    background-color: #fb7ed6;
+    ;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-element:hover .button-coloring {
+    background-color: #fb7ed6;
+    ;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-element:active .button-coloring {
+    background-color: #000000;
+    ;
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+
+
+.nav {
+    display: flex;
+    margin-top: 1vw;
+}
+
+.nav-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 6vw;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+#button-1:checked~.slider>.slide1 {
+    margin-left: 0;
+}
+
+#button-2:checked~.slider>.slide1 {
+    margin-left: -101%;
+}
+
+#button-3:checked~.slider>.slide1 {
+    margin-left: -202%;
+}
+
+#button-4:checked~.slider>.slide1 {
+    margin-left: -304%;
+}
+
+
+
+#button-1:checked~.container-text-button .text #h1 {
+
+    margin-left: 0;
+    transition-duration: .9s;
+}
+
+#button-2:checked~.container-text-button .text #h1 {
+
+    margin-left: -101%;
+
+    transition-duration: .9s;
+}
+
+#button-3:checked~.container-text-button .text #h1 {
+
+    margin-left: -202%;
+
+    transition-duration: .9s;
+}
+
+#button-4:checked~.container-text-button .text #h1 {
+
+    margin-left: -304%;
+
+    transition-duration: .9s;
+}
+
+
+@media screen and (max-width:768px) {
+    .container-text-button {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .h {
+        width: 60vw;
+    }
+
+    .text {
+        width: 70vw;
+        margin-left: 0.1rem;
+    }
+
+    #button-2:checked~.container-text-button .text #h1 {
+        margin-left: -85%;
+    }
+
+    #button-3:checked~.container-text-button .text #h1 {
+        margin-left: -170%;
+    }
+
+    #button-4:checked~.container-text-button .text #h1 {
+
+        margin-left: -257%;
+    }
+}
+
+
+@media screen and (max-width:625px) {
+    .h {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .h {
+font-size: 1rem;
+
+    }
+}
+
+@media screen and (max-width:517px) {
+    .text {
+width:60vw;
+    }
+    .h{
+        width: 60vw;
+        height: 20vw;
+    }
+
+    #button-2:checked~.container-text-button .text #h1 {
+        margin-left: -100%;
+    }
+
+    #button-3:checked~.container-text-button .text #h1 {
+        margin-left: -200%;
+    }
+
+    #button-4:checked~.container-text-button .text #h1 {
+        margin-left: -300%;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .h {
+font-size: 0.8rem;
+
+    }
+}
